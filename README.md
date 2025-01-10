@@ -1,18 +1,46 @@
-## Getting Started
+The Personal Finance Manager is a Java-based application designed to help users track and manage their personal finances effectively. It provides functionalities for recording income and expenses, viewing transaction details, and generating detailed financial reports.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+--Features
+Add Income and Expenses: Record various income sources and expense categories.
+View Transactions: View all transactions or filter them by category.
+Generate Reports:
+Overall Savings Report
+Detailed Income Report
+Detailed Expense Report
+Persistent Storage: Automatically saves and loads transaction data from a file.
 
-## Folder Structure
+--How to Use: 
+1.Clone this repository:git clone https://github.com/yourusername/PersonalFinanceManager.git 
+2.cd PersonalFinanceManager
+3.Compile the code:javac -d bin src/IncomeTrakingProject/*.java
+4.Run the application:java -cp bin IncomeTrakingProject.TheMainProg
+5.Follow the menu prompts to:
+Add income or expenses.
+View transaction details.
+Generate reports.
+Save and exit the program.
 
-The workspace contains two folders by default, where:
+--Project Structure
+TheMainProg: Entry point for the application. Handles user interactions through a console menu.
+Reports: Manages transactions and generates reports.
+Transaction: Base class representing a transaction with shared properties like amount, description, and date.
+Income and Expense: Subclasses of Transaction for income and expense-specific data.
+Category and expenseCategory: Enums for predefined categories of income and expenses.
+CategoryUtil: Utility class for mapping user input to appropriate categories.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+--File Storage
+Transaction data is stored in a serialized file named Transactions.txt. It is automatically loaded when the program starts and saved when the program exits.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+--Prerequisites
+Java 8 or higher.
+Basic knowledge of Java and command-line usage.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
+--Sample Usage
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Welcome to the personal finance manager
+1. Add income
+2. Add expense
+3. View Transaction
+4. Generate report
+5. Save and Exit
